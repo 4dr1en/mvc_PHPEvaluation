@@ -1,16 +1,18 @@
 <?php
 
 $verify = false;
-if (isset($_POST['pwd'])) {
+if (isset($_POST['pwd'], $_POST['firstname'])) {
     $filePwd = fopen('pwd', 'r');
 
     while ($line = fgets($filePwd)) {
         $elems = explode(' ', trim($line));
-        $hash = $elems[0];
-        $firstname = $elems[1];
-        if (password_verify($_POST['pwd'], trim($hash))) {
+        $id = $elems[0];
+        $user= unserialize($elems[1]);
+        if ($_POST['firstname'] == $user['firstname'] && password_verify($_POST['pwd'], $user['password'])) {
             $verify = true;
-            $_SESSION['firstname'] = $firstname;
+            $_SESSION['id'] = $id;
+            $_SESSION['user'] = $user;
+            var_dump($_SESSION['user']);
             break;
         }
     }
