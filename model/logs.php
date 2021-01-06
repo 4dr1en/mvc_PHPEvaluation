@@ -5,6 +5,7 @@ class LogsManager{
     private $_currentLogFilePath;
 
     public function __construct(){
+        date_default_timezone_set('Europe/Paris');
         $this->_currentLogFilePath= './logs/'.date('d-m-Y').'.log';
     }
 
@@ -26,6 +27,15 @@ class LogsManager{
         if($action == 'pageVisited'){
             $newLine.= ' page visited: '. $page;
         }
+        elseif($action == 'login'){
+            $newLine.= ' connection';
+        }
+        elseif($action == 'register'){
+            $newLine.= ' registration';
+        }
+        elseif($action == 'disconnection'){
+            $newLine.= ' disconnection';
+        }
         if($userId){
             $newLine.= ' by user n°'. $userId;
         }
@@ -33,7 +43,6 @@ class LogsManager{
     }
 
     private function getFormatedCurrentTime(){
-        $infosDate= getdate();
         return '['.date("H:i:s").']';
     }
 
@@ -42,11 +51,15 @@ class LogsManager{
         $logs= [];
         while($linelog= fgets($filelog)){
             $logs[]= [
-                'date'=>substr($linelog, 0, 10),
-                'object'=>substr($linelog, 11)
+                'date'=> substr($linelog, 0, 10),
+                'object'=> substr($linelog, 11)
             ];
         }
         return $logs;
+    }
+
+    public function deleteFilelog($path){
+        return unlink($path);
     }
 
 }
