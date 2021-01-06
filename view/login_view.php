@@ -1,5 +1,5 @@
 <main>
 <?php
-    echo ($verify)? 'ok' : 'echec de la connection, veuillier vérifier votre nom ou votre password';
+    echo ($verify)? 'your are now connected' : 'Connection failed, please check your first name or password';
 ?>
 </main>

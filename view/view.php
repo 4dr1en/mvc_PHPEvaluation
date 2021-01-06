@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        include('./components/header.php');
+        //include('./components/header.php');
         include($PAGE['mainSectionHtml']);
         include('./components/footer.php');
     ?>
