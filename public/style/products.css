@@ -1,0 +1,23 @@
+#display{
+    height: 500px;
+    background-color: rgb(199, 180, 157);
+}
+
+
+#products{
+
+}
+
+.product{
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.sectionImg{
+    height: 100%;
+}
+
+.description{
+    height: 100%;
+}

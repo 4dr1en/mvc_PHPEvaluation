@@ -1,0 +1,85 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 180px 0;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*form*/
+form{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+form>div{
+    display: grid;
+    grid-gap: 20px 65px;
+    grid-template-columns: 1fr 300px;
+}
+
+form label, form p{
+    text-align: right;
+    justify-self: flex-end;
+}
+
+
+#gender{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+}
+
+#gender label{
+    padding-left: 10px;
+    justify-self: flex-start;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    padding: 5px;
+    width: 30%;
+    align-self: center;
+
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(124, 124, 124);
+}
+
+input[type="submit"]:hover{
+    border: 1px solid black;
+}
+
+#errorsForm{
+    border: 1px solid red;
+    background-color: rgb(255, 226, 220);
+    color: red;
+    position: relative;
+    padding: 0 60px;
+    width: 600px;
+}
+
+#closeErrors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(255, 108, 108);
+}
+
+#closeErrors:hover{
+    border: 1px solid red;
+    cursor: pointer;
+}
