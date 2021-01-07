@@ -61,14 +61,7 @@ header nav li a {
 }
 
 header.deployed {
-    height: 80px;
-    background-color: #fff;
-}
-header.deployed li a {
-    color: black;
-}
-header.deployed li a:hover {
-    text-decoration: underline black;
+    height: 100px;
 }
 
 #h__left{
@@ -122,4 +115,62 @@ footer a{
 
 footer a:hover{
     transform: scale(1.1);
+}
+
+/*form login*/
+#formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+
+    position: fixed;
+    right: 100px;
+    top: -1000px;
+
+    border: 1px solid rgb(46, 46, 46);
+    background-color: rgba(236, 233, 230, 0.7);
+    border-radius: 0 0 30px 30px;
+    box-shadow: rgb(146, 146, 146) 1px 1px 5px;
+    padding: 50px;
+
+    z-index: 2;
+
+    transition: all 1s;
+}
+
+#formLogin input{
+    width: 350px;
+    margin: 7px 0 15px 0;
+}
+
+#formLogin h2{
+    font-size: 2rem;
+}
+
+#formLogin label{
+    font-size: 1.2rem;
+}
+
+#formLogin input[type='submit']{
+    width: 180px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    border-radius: 15px;
+}
+
+#formLogin input[type='submit']:hover{
+    box-shadow: 0 0 3px black;
+}
+
+#formLogin.loginFormOpen{
+    top: 95px;
+}
+
+/*other*/
+
+input[type="submit"]{
+    cursor: pointer;
 }

@@ -16,7 +16,7 @@
             print('<div id="closeErrors">X</div></div>');
         }
     ?>
-    <form action="register" method="post">
+    <form action="register" method="post" id="register">
         <div>
             <label for="firstname">Your first name</label><input type="text" name="firstname" id="firstname">
             <label for="lastname">You last name</label><input type="text" name="lastname" id="lastname">
@@ -25,7 +25,7 @@
             <div id="gender">
                 <input type="radio" name="gender" value='female' id="female"><label for="female">Female</label>
                 <input type="radio" name="gender" value='male' id="male"><label for="male">Male</label>
-                <input type="radio" name="gender" value='ns' id="ns"><label for="other">Other</label>
+                <input type="radio" name="gender" value='ns' id="other"><label for="other">Other</label>
             </div>
             
             <label for="email">Your email</label><input type="email" name="email" id="email">

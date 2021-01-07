@@ -1,15 +1,15 @@
 <main>
     <?php
-        print('<h1>My logs files</h1><table>'); 
-        
-        print('<tr><th>date</th><th>action</th></tr>');
-        $files= $logsManager->getLogsFilesList();
+        print('<h1>My logs files</h1><form action="logsboard" method="post" id="formlogs"><table>'); 
+        print('<input type="hidden" name="file" value="'.$logpath.'"></input>');
+        print('<tr><th>log</th><th>action</th></tr>');
+        $i= 1;
         foreach ($logs as $log) {
-            print('<tr>');
-            print('<td>'.$log['date'].'</td>');
-            print('<td>'.$log['object'].'</td>');
+            print('<td class="logline" data-line="'.$i.'">'.$log.'</td>');
+            print('<td><a href="http://cours/logsboard?action=deleteLine&line='.$i.'&log='.htmlspecialchars($_GET['log']).'">delete line</a></td>');
             print('</tr>');
+            $i++;
         }
-        print('</table>');
+        print('</table></form>');
     ?>
 </main>

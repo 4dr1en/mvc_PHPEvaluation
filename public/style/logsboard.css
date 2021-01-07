@@ -36,3 +36,10 @@ td{
 
 }
 
+.logModif{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(146, 146, 146);
+    background-color: rgba(0,0,0,0);
+}

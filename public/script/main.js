@@ -30,7 +30,6 @@
         Elt_btnLogin.addEventListener('click',e=>{
             e.preventDefault();
             const Elt_formLogin= document.getElementById('formLogin');
-            console.log(Elt_formLogin);
             Elt_formLogin.classList.toggle('loginFormOpen');
         })
     }

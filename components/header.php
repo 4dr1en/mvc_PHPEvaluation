@@ -16,15 +16,15 @@
                             print('<li><a href="logsboard">admin</a></li>');
                         }
                     ?>
-                        <li><a href="profile">my account</a></li>
-                        <li><a href="logout">log out</a></li>
+                        <li><a href="profile">My account</a></li>
+                        <li><a href="logout">Log out</a></li>
                         <li><a href="#">My basket</a></li>
                     <?php 
                     }
                     else{
                     ?>
-                        <li><a href="register">sign up</a></li>
-                        <li><a href="" id="btnLogin">connect</a></li>
+                        <li><a href="register">Sign up</a></li>
+                        <li><a href="" id="btnLogin">Connect</a></li>
                     <?php
                     }
                
@@ -34,3 +34,14 @@
         </nav>
     </div>
 </header>
+<form action="login" method="post" id="formLogin">
+    <h2>Login</h2>
+    <div>
+        <label for="firstname">Your first name</label><input type="text" name="firstname" id="firstname">
+    </div>
+    <div>
+        <label for="pwd">Your password</label><input type="password" name="pwd" id="pwd">
+    </div>
+
+    <input type="submit" value="Send">
+</form>
