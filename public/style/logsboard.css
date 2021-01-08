@@ -43,3 +43,57 @@ td{
     border-bottom: 2px solid rgb(146, 146, 146);
     background-color: rgba(0,0,0,0);
 }
+
+.btNeutral{
+    height: 32px;
+    margin-right: 7px;
+    padding: 3px 13px 4px 13px;
+    text-decoration: none;
+    color: #333333;
+    border: 2px solid #333333;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btNeutral:hover{
+    color: #000000;
+    border: 2px solid #000000;
+    box-shadow: 0 0 3px rgb(168, 168, 168);
+}
+
+.btRed{
+    height: 32px;
+    margin-right: 7px;
+    padding: 3px 13px 4px 13px;
+    text-decoration: none;
+    color: #d10000;
+    border: 2px solid #d10000;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btRed:hover{
+    color: #b31717;
+    border: 2px solid #a50000;
+    box-shadow: 0 0 3px #cf3f3f;;
+}
+
+.btGreen{
+    height: 32px;
+    margin-right: 7px;
+    padding: 3px 13px 4px 13px;
+    text-decoration: none;
+    color: #047200;
+    border: 2px solid #047200;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btGreen:hover{
+    color: #147e10;
+    border: 2px solid #035700;
+    box-shadow: 0 0 3px #035700;
+}
+
+input.btNeutral, input.btRed, input.btGreen{
+    position: relative;
+    top: -1px;
+}
+

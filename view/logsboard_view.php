@@ -8,8 +8,8 @@
             print('<td>');
             print($file);
             print('</td>');
-            print('<td><a href="logsboard?action=consult&log='.$file.'"><div>consult</div></a></td>');
-            print('<td><a href="logsboard?action=delete&log='.$file.'"><div>delete</div></a></td>');
+            print('<td><a class="btNeutral" href="logsboard?action=consult&log='.$file.'">consult</a></td>');
+            print('<td><a class="btRed" href="logsboard?action=delete&log='.$file.'">Delete file</a></td>');
             print('</tr>');
         }
         print('</table>')

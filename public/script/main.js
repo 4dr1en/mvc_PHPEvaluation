@@ -35,4 +35,14 @@
     }
 })();
 
-//document.getElementById
+/*display cart*/
+(()=>{
+    const Elt_btnCart= document.getElementById("btnCart");
+    if(Elt_btnCart){
+        Elt_btnCart.addEventListener('click',e=>{
+            e.preventDefault();
+            const Elt_cart= document.getElementById('cart');
+            Elt_cart.classList.toggle('cartOn');
+        })
+    }
+})();

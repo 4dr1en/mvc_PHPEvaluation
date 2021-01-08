@@ -1,0 +1,56 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-flow: row wrap;
+
+    height: 100%;
+}
+
+main>div{
+    margin-top: 6%;
+}
+
+#imgProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    min-width: 400px;
+    margin-left: 10%;
+}
+
+#imgProfile>img{
+    border-radius: 50%;
+}
+
+#userInfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+    width: 60%;
+    max-width: 800px;
+    height: 400px;
+}
+
+#userInfos>div{
+    display: grid;
+    column-gap: 50px;
+    row-gap: 2%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infoTitle{
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.infoContent{
+    display: flex;
+    justify-content: left;
+    font-size: 1.4rem;
+}

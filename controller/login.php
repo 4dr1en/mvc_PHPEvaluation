@@ -17,5 +17,7 @@ if (isset($_POST['pwd'], $_POST['firstname'])) {
         }
     }
 }
-include('./view/login_view.php');
+
+include('./controller/home.php');
+
 

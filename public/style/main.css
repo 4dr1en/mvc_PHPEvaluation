@@ -18,15 +18,18 @@ main{
 
 /*header*/
 header {
-    position: fixed;
-    top: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 10;
+
     width: 100%;
-    background-color: rgb(44, 44, 44);
     height: 120px;
+
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    background-color: rgb(46, 46, 46);
+    
 }
 header img {
     height: 140px;
@@ -89,7 +92,7 @@ footer{
     width: 100%;
 
     background-color: rgb(46, 46, 46);
-    border-top: double 4px  rgb(46, 46, 46);
+    border-top: solid 4px  rgb(46, 46, 46);
     
     position: absolute;
     bottom: 0;
@@ -169,8 +172,41 @@ footer a:hover{
     top: 95px;
 }
 
+/*cart*/
+
+#cart{
+    width: 250px;
+    height: 100%;
+    padding-top: 180px;
+    padding-left: 40px;
+    position: fixed;
+    right: -300px;
+    top: 0;
+
+    background: rgb(82,82,82);
+    background: linear-gradient(90deg, rgba(82,82,82,1) 0%, rgba(54,54,54,1) 100%);    color: white;
+    box-shadow: 0 0 4px rgb(82,82,82);
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+#cart h3{
+    font-size: 2rem;
+}
+
+#cart.cartOn{
+    right: 0;
+}
+
+
 /*other*/
 
 input[type="submit"]{
     cursor: pointer;
 }
+
+
+
+
+
+

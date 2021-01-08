@@ -6,7 +6,7 @@
         $i= 1;
         foreach ($logs as $log) {
             print('<td class="logline" data-line="'.$i.'">'.$log.'</td>');
-            print('<td><a href="http://cours/logsboard?action=deleteLine&line='.$i.'&log='.htmlspecialchars($_GET['log']).'">delete line</a></td>');
+            print('<td><a class="btNeutral" href="http://cours/logsboard?action=deleteLine&line='.$i.'&log='.htmlspecialchars($_GET['log']).'">Delete</a></td>');
             print('</tr>');
             $i++;
         }

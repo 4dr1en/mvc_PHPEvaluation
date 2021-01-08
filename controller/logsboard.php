@@ -20,6 +20,9 @@ if(isset($_GET['action'], $_GET['log']) && file_exists('./logs/'.$_GET['log'])){
     }
     if($_GET['action'] == 'deleteLine' && isset($_GET['line'])){
         $logsManager->modifyLog('./logs/'.$_GET['log'], $_GET['line']);
+
+        $PAGE['mainSectionHtml']= './view/logsboard_view.php';
+        include('./view/view.php');
     }
 }
 elseif(isset($_POST['modify'], $_POST['textLog'], $_POST['file'], $_POST['id'])){
