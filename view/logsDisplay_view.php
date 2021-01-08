@@ -5,8 +5,8 @@
         print('<tr><th>log</th><th>action</th></tr>');
         $i= 1;
         foreach ($logs as $log) {
-            print('<td class="logline" data-line="'.$i.'">'.$log.'</td>');
-            print('<td><a class="btNeutral" href="http://cours/logsboard?action=deleteLine&line='.$i.'&log='.htmlspecialchars($_GET['log']).'">Delete</a></td>');
+            print('<td class="logline" data-line="'.$i.'">'.$log.'</td>'); // data-log="'.str_replace(' ', '_', $log).'"
+            print('<td class="actionlog"><a class="btNeutral" href="http://cours/logsboard?action=deleteLine&line='.$i.'&log='.htmlspecialchars($_GET['log']).'">Delete</a></td>');
             print('</tr>');
             $i++;
         }

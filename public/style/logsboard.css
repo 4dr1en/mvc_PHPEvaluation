@@ -1,3 +1,13 @@
+body{
+    background-color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
 
 table { 
     border-collapse: collapse; 
@@ -13,7 +23,7 @@ tr:nth-child(odd){
     background-color: whitesmoke;
 }
 tr:nth-child(even){
-    background-color: white;
+    background-color: rgb(235, 235, 235);
 }
 
 tr:first-child{
@@ -31,9 +41,8 @@ th:not(:last-child){
 
 
 td{
-    padding: 10px 15px;
+    padding: 10px 40px;
     min-width: 200px;
-
 }
 
 .logModif{

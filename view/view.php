@@ -21,11 +21,11 @@
 </head>
 <body>
     <?php
-        include('./components/header.php');
-        include('./components/formLogin.php');
-        include('./components/cart.php');
+        include('./layout/header.php');
+        include('./layout/formLogin.php');
+        include('./layout/cart.php');
         include($PAGE['mainSectionHtml']);
-        include('./components/footer.php');
+        include('./layout/footer.php');
     ?>
 </body>
 </html>

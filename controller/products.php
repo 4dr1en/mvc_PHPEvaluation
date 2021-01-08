@@ -1,8 +1,4 @@
 <?php
-$PAGE['additionalCSS']= './public/style/products.css';
-$PAGE['mainSectionHtml']= './view/products_view.php';
-include('./view/view.php');
-
 if(isset($_SESSION['id'], $_GET['action'], $_GET['content'])){
     if(!isset($_SESSION['cart'])){
         $_SESSION['cart'] = [];
@@ -27,3 +23,7 @@ if(isset($_SESSION['id'], $_GET['action'], $_GET['content'])){
         }
     }
 }
+
+$PAGE['additionalCSS']= './public/style/products.css';
+$PAGE['mainSectionHtml']= './view/products_view.php';
+include('./view/view.php');
